@@ -1,0 +1,13 @@
+global:
+  smtp_smarthost: 'mail.kwei.nycu.me:25'
+  smtp_from: 'user@kwei.nycu.me'
+  smtp_auth_username: 'your_username'
+  smtp_auth_password: 'your_password'
+
+route:
+  receiver: 'email'
+
+receivers:
+- name: 'email'
+  email_configs:
+  - to: 'your_email@example.com'
